@@ -21,6 +21,7 @@ body{
     background-color: rgb(61, 187, 187);
     width: 55%;
     height: 100%;
+    min-width: 800px, 100%;
     float: left;
     position: relative;
     border-radius: 10px;
@@ -34,6 +35,21 @@ body{
     width: 45%;
     height: 100%;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 502px){
+    .container_3{
+        width: 100%;
+    }
+    .container_2{
+        width: 0%;
+    }
 }
 
 .from{
