@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Cadastro</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="container_2">
+
+            </div>
+            <div class="container_3">
+                <form class="from" action="#">
+                    <div class="card">
+                        <div class="card-top">
+                           <span class="material-icons ">
+                            supervisor_account
+                         </span> 
+                         <h1>Login</h1>
+                        </div>
+                        <div class="card-grup marge">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="card-grup">
+                            <input type="password" name="senha" placeholder="Senha" required>
+                        </div>
+
+                        <div class="card-grup">
+                            <label><input type="checkbox" class="teste">Lembre-me</label>
+                        </div>
+
+                        <div class="card-grup bnt">
+                            <button type="submit " class="bnt" id="botao">ACESSAR</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            var email;
+            var senha;
+            var botao;
+
+            email = document.getElementsByName('name');
+            senha = document.getElementsByName('senha');
+            botao = document.getElementById('botao');
+
+            botao.onclick = function(){
+               // if( name == 'root@gmail.com' && senha == '123' ){
+                //   
+               // }
+                 alert('Senha Incorreta');
+            }
+
+
+        </script>
+    </body>
+</html>
