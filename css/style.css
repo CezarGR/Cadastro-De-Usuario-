@@ -15,6 +15,7 @@ body{
     bottom: 0px;
     box-shadow: 0px 0px 8px 0px #000000a6;
     border-radius: 11px;
+    display: flex;
 }
 
 .container_2{
@@ -36,24 +37,34 @@ body{
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     .container{
         width: 90%;
+ 
     }
-}
-
-@media only screen and (max-width: 600px){
+    .container_2{
+        width: 0%;
+    }
     .container_3{
         width: 100%;
+      
+    }
+    
+}
+
+@media only screen and (max-width: 0px){
+    .container_3{
+        width: 100%;
+        float: left;
     }
     .container_2{
         width: 0%;
     }
     .container{
-        width: 50%;
+        width: 90%;
     }
     body{
-        width: 50%;
+        width: 100%;
     }
 }
 
