@@ -6,7 +6,7 @@ body{
 .container{
     background-color: rgb(255, 255, 255);
     width: 100vh;
-    height: 60vh;
+    height: 65vh;
     margin: auto;
     position: absolute;
     left: 0px;
@@ -35,37 +35,7 @@ body{
     width: 45%;
     height: 100%;
     border-radius: 10px;
-}
-
-@media only screen and (max-width: 600px){
-    .container{
-        width: 90%;
- 
-    }
-    .container_2{
-        width: 0%;
-    }
-    .container_3{
-        width: 100%;
-      
-    }
-    
-}
-
-@media only screen and (max-width: 0px){
-    .container_3{
-        width: 100%;
-        float: left;
-    }
-    .container_2{
-        width: 0%;
-    }
-    .container{
-        width: 90%;
-    }
-    body{
-        width: 100%;
-    }
+    margin: auto;
 }
 
 
