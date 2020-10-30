@@ -16,7 +16,7 @@
             <div class="container_2 col-xl-6 col-m-6 col-s"></div>
 
             <div class="container_3 col-xl-6 col-m-6 col-s-10 col-xs-10">
-                <form class="from" action="teste.html" method="POST">
+                <form class="from" accept=""  id="from"  >
                     <div class="card">
                         <div class="card-top">
                            <span class="material-icons ">
@@ -25,11 +25,11 @@
                          <h1>Login</h1>
                         </div>
                         <div class="card-grup marge">
-                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="email"  id="email" placeholder="Email" required>
                         </div>
 
                         <div class="card-grup">
-                            <input type="password" name="senha" placeholder="Senha" required>
+                            <input type="password" id="senha" placeholder="Senha" required>
                         </div>
 
                         <div class="card-grup">
@@ -37,7 +37,7 @@
                         </div>
 
                         <div class="card-grup bnt">
-                            <button type="submit " class="bnt" id="botao" >ACESSAR</button>
+                            <button  type="submit " class="bnt" id="botao"  onclick="login()" >ACESSAR</button>
                         </div>
                         
                     </div>
@@ -46,12 +46,37 @@
         </div>
 
         <script>
-            
-            var responsivel = HTMLBodyElement.media;
 
-            responsivel = function(){
-                media
+            function validacao() {
+                var email = document.getElementById("email").value;
+                var senha = document.getElementById("senha").value;
+        
+
+                var vemail = email === 'teste@gmail.com';
+                var vsenha = senha === '123';
+
+                
+                 if(vemail == true && vsenha == true){
+                    return true;
+                }else{
+                   alert('SENHA INVALIDA ou EMAL INVALIDO');
+             
+                }   
             }
+
+            function login() {
+              
+                var a = validacao();
+                
+                if(a === true){
+                    var destino = document.getElementById("from");
+                     destino.setAttribute("action", "teste.html");
+                 
+                }
+
+            }
+
+
         </script>
 
         
